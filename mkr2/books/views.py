@@ -23,7 +23,7 @@ def book_list(request):
     return render(request, 'book_list.html', context={ 
         'books': books
     })
-def recipe_detail(request, book_id):
+def book_detail(request, book_id):
     book= get_object_or_404(Book, id=book_id)
     return render(request, 'book_detail.html', context={ 
         'book': book

@@ -1,3 +1,9 @@
+from audioop import reverse
+from unittest import TestCase
+
+from mkr2.books.models import Author
+
+
 class AuthorViewTests(TestCase):
     def setUp(self):
         self.author1 = Author.objects.create(name="Author One")
