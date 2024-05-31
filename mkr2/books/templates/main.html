@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <a href="{% url 'recipe_details' %}">Book details</a>
+
+    {% include 'book_list.html' %}
+
+    {% include 'author_list.html' %}
+
+    {% include 'book_list_ordered.html' %}
+
+{% endblock %}

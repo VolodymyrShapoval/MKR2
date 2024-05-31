@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <a href="{% url 'main' %}">Home page</a>
+
+    {% include 'author_detail.html' %}
+
+    {% include 'book_detail.html' %}
+
+{% endblock %}
